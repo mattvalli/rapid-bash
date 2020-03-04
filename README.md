@@ -22,3 +22,6 @@ export PATH=$PATH_RAPID_BASH:$PATH
 export PATH_ELASTICSEARCH_HEAD=<pathname>
 
 ```
+
+# Scripts
+`elasticsearch-client` - Launches AWS elasticsearch-head client UI
