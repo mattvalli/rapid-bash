@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo Starting Elasticsearch Head Client...
+if [-z "$PATH_RAPID_BASH"] && [-z "$PATH_ELASTICSEARCH_HEAD"]
+then
+	echo No RAPID_BASH_PATH or ELASTICSEARCH_HEAD_PATH!!!
+	echo You must provide an enviroment variable with a path to appropriate
+	echo installation destination to enable the features of RapidBash.
+else
+	echo Launching Elasticsearch Head Client...
+	cd $PATH_ELASTICSEARCH_HEAD
+	open http://localhost:9100
+	npm run start
+fi
