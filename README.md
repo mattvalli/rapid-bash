@@ -1,11 +1,11 @@
 # rapid-bash
 A set of bash scripts to empower developers to get up and running quickly.
 
-# Installation
+## Installation
 For `rapid-bash` to work properly, you must setup a few Environment variables
 after installing.
 
-## Mac
+### Mac
 On a Mac, we recommend setting up and exporting these variables from one of 
 the following locations:
 - `~/.bash_profile`
@@ -23,5 +23,5 @@ export PATH_ELASTICSEARCH_HEAD=<pathname>
 
 ```
 
-# Scripts
+## Scripts
 `elasticsearch-client` - Launches AWS elasticsearch-head client UI
