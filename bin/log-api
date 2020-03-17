@@ -1,0 +1,26 @@
+#!/bin/bash
+
+
+tailFormat=${1:-'-500f'}
+
+cd /var/log/nginx
+if [ "$2" == "-e" ]
+then
+        echo ""
+        echo "******************************************************"
+        echo "*****    ERROR LOG - $(pwd)/error.log    *****"
+        echo "******************************************************"
+        echo ""
+        echo ""
+        sudo tail $tailFormat error.log
+else
+        echo ""
+        echo "*********************************************************"
+        echo "*****    API LOG - $(pwd)/edisen-api.log    *****"
+        echo "*********************************************************"
+        echo ""
+        echo ""
+        sudo tail $tailFormat edisen-api.log
+fi
+
+
